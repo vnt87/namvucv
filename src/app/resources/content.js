@@ -1,54 +1,47 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Nam',
+    lastName:  'Vu',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Principal UI Designer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Ho_Chi_Minh',
+    languages: ['English', 'Vietnamese']
 }
 
 const newsletter = {
     display: true,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    description: <>I share insights on UI/UX design, generative AI, and creating innovative digital experiences that drive results.</>
 }
 
 const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
-    {
-        name: 'GitHub',
-        icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
-    },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/vunam',
     },
     {
-        name: 'X',
-        icon: 'x',
-        link: '',
+        name: 'Website',
+        icon: 'globe',
+        link: 'https://www.namvu.net',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
-    },
+        link: 'mailto:envigraphy@gmail.com',
+    }
 ]
 
 const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>UI/UX Designer and Creative Technologist</>,
+    subline: <>I'm Nam, a Principal UI Designer at <InlineCode>NashTech</InlineCode>, specializing in creating<br/> user-centric solutions for enterprise applications and digital experiences.</>
 }
 
 const about = {
@@ -69,90 +62,71 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Nam is a Hanoi-based UI/UX designer with a passion for crafting intuitive and engaging digital experiences. With expertise in design principles, generative AI, and creative technologies, I specialize in creating innovative solutions that enhance user satisfaction and drive results.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
+                company: 'NashTech Limited',
                 timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                role: 'Principal UI Designer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Design and optimize user interfaces for enterprise applications, improving usability and user satisfaction.</>,
+                    <>Lead UI design initiatives for complex software solutions, collaborating with cross-functional teams.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: []
             },
             {
-                company: 'Creativ3',
+                company: 'NashTech Limited',
                 timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                role: 'Senior User Interface Designer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Developed and maintained design systems for enterprise applications.</>,
+                    <>Collaborated with development teams to ensure design implementation quality.</>
                 ],
-                images: [ ]
+                images: []
+            },
+            {
+                company: 'DeNA',
+                timeframe: '2014 - 2018',
+                role: 'Game UI Artist',
+                achievements: [
+                    <>Created and maintained graphic assets for mobile game projects.</>,
+                    <>Managed and scheduled tasks for UI team members.</>
+                ],
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'School of Visual Arts',
+                description: <>Studied Graphic Design (2009-2011)</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'La Trobe University',
+                description: <>Bachelor of Business Administration (2005-2008)</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'UI/UX Design',
+                description: <>Specializing in creating user-centric solutions for apps and interfaces.</>,
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                // optional: leave the array empty if you don't want to display images
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Generative AI',
+                description: <>Expertise in self-hosted LLMs, image creation, and creative technologies.</>,
+                images: []
             }
         ]
     }
