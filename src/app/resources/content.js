@@ -41,7 +41,7 @@ const home = {
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
     headline: <>UI/UX Designer and Creative Technologist</>,
-    subline: <>I'm Nam, a Principal UI Designer at <InlineCode>NashTech</InlineCode>, specializing in creating<br/> user-centric solutions for enterprise applications and digital experiences.</>
+    subline: <>I'm Nam, a Principal UI Designer at <InlineCode>NashTech Global</InlineCode>, specializing in creating user-centric solutions for enterprise applications and digital experiences.</>
 }
 
 const about = {
