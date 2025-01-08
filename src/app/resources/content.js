@@ -8,7 +8,6 @@ const person = {
     },
     role:      'Principal UI Designer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Ho_Chi_Minh',
     languages: ['English', 'Vietnamese']
 }
 
@@ -32,7 +31,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:envigraphy@gmail.com',
+        link: 'mailto:contact@namvu.net',
     }
 ]
 
@@ -47,7 +46,7 @@ const home = {
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    description: `Meet ${person.name}, ${person.role}`,
     tableOfContent: {
         display: true,
         subItems: false
