@@ -41,10 +41,10 @@ const effects = {
 
 const style = {
     theme:       'dark',         // dark | light
-    neutral:     'sand',         // sand | gray | slate
-    brand:       'red',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    neutral:     'gray',         // sand | gray | slate
+    brand:       'green',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     accent:      'green',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    solid:       'contrast',     // color | contrast
+    solid:       'color',     // color | contrast
     solidStyle:  'plastic',         // flat | plastic
     border:      'rounded',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent

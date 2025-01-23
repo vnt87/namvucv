@@ -7,7 +7,7 @@ const person = {
         return `${this.firstName} ${this.lastName}`;
     },
     role:      'Principal UI Designer',
-    avatar:    '/images/avatar.jpg',
+    avatar:    '/images/avatar.jpeg',
     languages: ['English', 'Vietnamese']
 }
 
