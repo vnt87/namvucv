@@ -1,4 +1,4 @@
-const baseURL = 'demo.magic-portfolio.com'
+const baseURL = 'demo2.namvu.net'
 
 // Enable localization
 const i18n = false;
@@ -41,12 +41,12 @@ const effects = {
 
 const style = {
     theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
-    brand:       'emerald',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
-    accent:      'indigo',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    neutral:     'sand',         // sand | gray | slate
+    brand:       'red',      // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
+    accent:      'green',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'contrast',     // color | contrast
-    solidStyle:  'flat',         // flat | plastic
-    border:      'playful',      // rounded | playful | conservative
+    solidStyle:  'plastic',         // flat | plastic
+    border:      'rounded',      // rounded | playful | conservative
     surface:     'translucent',  // filled | translucent
     transition:  'all'           // all | micro | macro
 }
