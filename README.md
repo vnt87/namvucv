@@ -1,6 +1,6 @@
 # **Build your portfolio with Once UI's Magic Portfolio**
 
-View the [demo here](https://demo.magic-portfolio.com).
+View the [demo here](https://cv2.namvu.net).
 
 ![Magic Portfolio](public/images/cover.png)
 
@@ -85,5 +85,40 @@ Distributed under the CC BY-NC 4.0 License.
 
 See `LICENSE.txt` for more information.
 
-# **Deploy with Vercel**
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fcover.png)
+# **Deploy with Docker**
+
+There are two ways to deploy Magic Portfolio using Docker:
+
+## **Using Docker Compose (Recommended)**
+
+1. Create a docker-compose.yml file:
+```yaml
+services:
+  web:
+    image: ghcr.io/vnt87/namvucv:latest
+    ports:
+      - "6969:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
+```
+
+2. Run with Docker Compose:
+```bash
+docker compose up -d
+```
+
+The application will be available at `http://localhost:6969`
+
+## **Using Docker CLI**
+
+Run directly using Docker CLI:
+```bash
+docker run -d -p 6969:3000 \
+  -e NODE_ENV=production \
+  -e NEXT_TELEMETRY_DISABLED=1 \
+  ghcr.io/vnt87/namvucv:latest
+```
+
+The application will be available at `http://localhost:6969`
