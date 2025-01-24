@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  web:
+    image: ghcr.io/vnt87/namvucv:latest
+    ports:
+      - "6969:3000"
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1
+    restart: unless-stopped
