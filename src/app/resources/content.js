@@ -68,8 +68,8 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'NashTech Limited',
-                timeframe: '2022 - Present',
+                company: 'NashTech Global',
+                timeframe: '2018 - Present',
                 role: 'Principal UI Designer',
                 achievements: [
                     <>Design and optimize user interfaces for enterprise applications, improving usability and user satisfaction.</>,
@@ -78,9 +78,9 @@ const about = {
                 images: []
             },
             {
-                company: 'NashTech Limited',
-                timeframe: '2018 - 2022',
-                role: 'Senior User Interface Designer',
+                company: 'DeNA Co. Ltd.',
+                timeframe: '2014 - 2018',
+                role: 'Lead Game UI Artist',
                 achievements: [
                     <>Developed and maintained design systems for enterprise applications.</>,
                     <>Collaborated with development teams to ensure design implementation quality.</>
@@ -88,9 +88,9 @@ const about = {
                 images: []
             },
             {
-                company: 'DeNA',
-                timeframe: '2014 - 2018',
-                role: 'Game UI Artist',
+                company: 'Fifth iMedia',
+                timeframe: '2012 - 2014',
+                role: 'Creative Graphic Designer',
                 achievements: [
                     <>Created and maintained graphic assets for mobile game projects.</>,
                     <>Managed and scheduled tasks for UI team members.</>
@@ -105,7 +105,7 @@ const about = {
         institutions: [
             {
                 name: 'School of Visual Arts',
-                description: <>Studied Graphic Design (2009-2011)</>,
+                description: <>Studied Visual Narratives (2009-2011)</>,
             },
             {
                 name: 'La Trobe University',
