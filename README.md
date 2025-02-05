@@ -4,10 +4,11 @@ View the [demo here](https://demo.magic-portfolio.com).
 
 ![Magic Portfolio](public/images/cover.png)
 
-
 # **Getting started**
 
 Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+
+## Local Development
 
 **1. Clone the repository**
 ```
@@ -24,17 +25,33 @@ npm install
 npm run dev
 ```
 
-**4. Edit config**
+## Docker Usage
+
+**1. Pull the Docker image**
+```bash
+docker pull ghcr.io/vnt87/namvucv:latest
+```
+
+**2. Run the container**
+```bash
+docker run -p 4242:4242 ghcr.io/vnt87/namvucv:latest
+```
+
+The application will be available at `http://localhost:4242`
+
+## Configuration
+
+**1. Edit config**
 ```
 src/app/resources/config
 ```
 
-**5. Edit content**
+**2. Edit content**
 ```
 src/app/resources/content
 ```
 
-**6. Create blog posts / projects**
+**3. Create blog posts / projects**
 ```
 Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
