@@ -1,19 +1,19 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Nam",
+  lastName: "Vu",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Product Designer",
   avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  location: "Asia/Saigon",
+  languages: ["English", "Vietnamese"],
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -24,27 +24,20 @@ const newsletter = {
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/vnt87",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
+    link: "https://www.linkedin.com/in/vunam/",
   },
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:contact@namvu.net",
   },
 ];
 
@@ -52,11 +45,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Principal UI Designer & Design Leader</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Nam, a Hanoi based Product Designer with over a decade of experience crafting intuitive
+      <br /> user experiences and interfaces.
     </>
   ),
 };
@@ -81,9 +74,9 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Nam is a Hanoi-based Product Designer with over a decade of experience in transforming complex challenges
+        into simple, elegant design solutions. His work spans digital interfaces, game UI, and graphic design,
+        with a strong focus on creating intuitive and engaging user experiences.
       </>
     ),
   },
@@ -92,41 +85,43 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "NashTech Global",
+        timeframe: "2018 - Present",
+        role: "Principal UI Designer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Leading UI/UX design initiatives and establishing design standards across multiple projects
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Mentoring and guiding design teams to deliver high-quality user experiences
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "DeNA Co., Ltd.",
+        timeframe: "2014 - 2018",
+        role: "Lead Game UI Artist",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Led the UI/UX design for multiple game projects
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Created engaging and intuitive game interfaces that enhanced player experience
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Fifth iMedia",
+        timeframe: "2012 - 2014",
+        role: "Graphic Designer",
+        achievements: [
+          <>
+            Developed creative visual solutions for various client projects
+          </>,
+          <>
+            Collaborated with teams to deliver compelling design assets
           </>,
         ],
         images: [],
@@ -138,50 +133,33 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "School of Visual Arts",
+        description: <>Studied Visual Narratives (2011)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "La Trobe University",
+        description: <>Bachelor's degree in Business Administration (2008)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "UI Design",
+        description: <>Extensive experience in UI design for web, mobile, and game interfaces with focus on user experience and accessibility.</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Design Leadership",
+        description: <>Leading design teams and establishing design systems and standards across multiple projects.</>,
+        images: [],
+      },
+      {
+        title: "Game UI",
+        description: <>Expert in creating engaging and intuitive game interfaces with experience at DeNA Co., Ltd.</>,
+        images: [],
       },
     ],
   },

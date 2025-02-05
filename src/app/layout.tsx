@@ -6,7 +6,7 @@ import classNames from "classnames";
 import { Footer, Header, RouteGuard } from "@/components";
 import { baseURL, effects, style } from "@/app/resources";
 
-import { Inter } from "next/font/google";
+import { Bai_Jamjuree } from "next/font/google";
 import { Source_Code_Pro } from "next/font/google";
 
 import { person, home } from "@/app/resources/content";
@@ -39,10 +39,11 @@ export async function generateMetadata() {
   };
 }
 
-const primary = Inter({
+const primary = Bai_Jamjuree({
   variable: "--font-primary",
   subsets: ["latin"],
   display: "swap",
+  weight: ["400", "600", "700"]
 });
 
 type FontConfig = {
