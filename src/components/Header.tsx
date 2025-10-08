@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
+import { Fade, Flex, Line, Row, ToggleButton, Button } from "@once-ui-system/core";
 
 import { routes, display, person, about, blog, work, gallery } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
@@ -112,57 +112,93 @@ export const Header = () => {
               {routes["/work"] && (
                 <>
                   <Row s={{ hide: true }}>
-                    <ToggleButton
+                    <Button
                       prefixIcon="grid"
-                      href="/work"
-                      label={work.label}
-                      selected={pathname.startsWith("/work")}
-                    />
+                      href="https://namvu.net/works/"
+                      target="_blank"
+                      variant="secondary"
+                      size="s"
+                      weight="default"
+                    >
+                      <Row gap="8" vertical="center" paddingRight="4">
+                        {work.label}
+                      </Row>
+                    </Button>
                   </Row>
                   <Row hide s={{ hide: false }}>
-                    <ToggleButton
+                    <Button
                       prefixIcon="grid"
-                      href="/work"
-                      selected={pathname.startsWith("/work")}
-                    />
+                      href="https://namvu.net/works/"
+                      target="_blank"
+                      variant="secondary"
+                      size="s"
+                      weight="default"
+                    >
+                      <Row gap="8" vertical="center" paddingRight="4">
+                      </Row>
+                    </Button>
                   </Row>
                 </>
               )}
               {routes["/blog"] && (
                 <>
                   <Row s={{ hide: true }}>
-                    <ToggleButton
+                    <Button
                       prefixIcon="book"
-                      href="/blog"
-                      label={blog.label}
-                      selected={pathname.startsWith("/blog")}
-                    />
+                      href="https://namvu.net/blog/"
+                      target="_blank"
+                      variant="secondary"
+                      size="s"
+                      weight="default"
+                    >
+                      <Row gap="8" vertical="center" paddingRight="4">
+                        {blog.label}
+                      </Row>
+                    </Button>
                   </Row>
                   <Row hide s={{ hide: false }}>
-                    <ToggleButton
+                    <Button
                       prefixIcon="book"
-                      href="/blog"
-                      selected={pathname.startsWith("/blog")}
-                    />
+                      href="https://namvu.net/blog/"
+                      target="_blank"
+                      variant="secondary"
+                      size="s"
+                      weight="default"
+                    >
+                      <Row gap="8" vertical="center" paddingRight="4">
+                      </Row>
+                    </Button>
                   </Row>
                 </>
               )}
               {routes["/gallery"] && (
                 <>
                   <Row s={{ hide: true }}>
-                    <ToggleButton
+                    <Button
                       prefixIcon="gallery"
-                      href="/gallery"
-                      label={gallery.label}
-                      selected={pathname.startsWith("/gallery")}
-                    />
+                      href="https://namvu.net/photography/"
+                      target="_blank"
+                      variant="secondary"
+                      size="s"
+                      weight="default"
+                    >
+                      <Row gap="8" vertical="center" paddingRight="4">
+                        {gallery.label}
+                      </Row>
+                    </Button>
                   </Row>
                   <Row hide s={{ hide: false }}>
-                    <ToggleButton
+                    <Button
                       prefixIcon="gallery"
-                      href="/gallery"
-                      selected={pathname.startsWith("/gallery")}
-                    />
+                      href="https://namvu.net/photography/"
+                      target="_blank"
+                      variant="secondary"
+                      size="s"
+                      weight="default"
+                    >
+                      <Row gap="8" vertical="center" paddingRight="4">
+                      </Row>
+                    </Button>
                   </Row>
                 </>
               )}

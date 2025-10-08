@@ -1,7 +1,0 @@
-{
-  "include": ["/*"],
-  "exclude": [
-    "/.next/cache/*",
-    "/.next/cache/webpack/server-production/*"
-  ]
-}
