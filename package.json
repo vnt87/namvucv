@@ -13,6 +13,7 @@
     "@mdx-js/loader": "^3.1.0",
     "@next/mdx": "^15.3.1",
     "@once-ui-system/core": "^1.4.27",
+    "@react-icons/all-files": "^4.1.0",
     "classnames": "^2.5.1",
     "cookie": "^1.0.2",
     "gray-matter": "^4.0.3",
@@ -32,7 +33,9 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "eslint": "^9.25.0",
+    "eslint-config-next": "^15.5.4",
     "typescript": "^5.8.3",
-    "tzdata": "^1.0.44"
+    "tzdata": "^1.0.44",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }
