@@ -25,8 +25,6 @@ export const Footer = () => {
           <Text onBackground="neutral-weak">© {currentYear} /</Text>
           <Text paddingX="4">{person.name}</Text>
           <Text onBackground="neutral-weak">
-<<<<<<< HEAD
-            {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}
             / Built with {" "}
             <SmartLink
               style={{ marginLeft: "-0.125rem" }}
@@ -34,11 +32,6 @@ export const Footer = () => {
             >
               Once UI
             </SmartLink>
-=======
-            {/* Usage of this template requires attribution. Please don't remove the link to Once UI unless you have a Pro license. */}
-            / Build your portfolio with{" "}
-            <SmartLink href="https://once-ui.com/products/magic-portfolio">Once UI</SmartLink>
->>>>>>> upstream/main
           </Text>
         </Text>
         <Row gap="16">

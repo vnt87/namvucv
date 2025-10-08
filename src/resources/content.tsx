@@ -1,78 +1,40 @@
 import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
-<<<<<<< HEAD:src/app/resources/content.js
-const person = {
+const person: Person = {
   firstName: "Nam",
   lastName: "Vu",
-  get name() {
-    return `${this.firstName} ${this.lastName}`;
-  },
+  name: "Nam Vu",
   role: "Product Designer",
   avatar: "/images/avatar.jpg",
+  email: "contact@namvu.net",
   location: "Asia/Saigon",
   languages: ["English", "Vietnamese"],
 };
 
-const newsletter = {
-  display: false,
-=======
-const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
-};
-
 const newsletter: Newsletter = {
-  display: true,
->>>>>>> upstream/main:src/resources/content.tsx
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: <>My weekly newsletter about creativity and engineering</>,
 };
 
-<<<<<<< HEAD:src/app/resources/content.js
-const social = [
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/vnt87",
-=======
 const social: Social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
->>>>>>> upstream/main:src/resources/content.tsx
+    link: "https://github.com/vnt87",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-<<<<<<< HEAD:src/app/resources/content.js
     link: "https://www.linkedin.com/in/vunam/",
-=======
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
->>>>>>> upstream/main:src/resources/content.tsx
   },
   {
     name: "Email",
     icon: "email",
-<<<<<<< HEAD:src/app/resources/content.js
-    link: "mailto:contact@namvu.net",
-=======
     link: `mailto:${person.email}`,
->>>>>>> upstream/main:src/resources/content.tsx
   },
 ];
 
@@ -82,38 +44,16 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-<<<<<<< HEAD:src/app/resources/content.js
   headline: <>Principal UI Designer & Design Leader</>,
+  featured: {
+    display: false,
+    title: "",
+    href: "",
+  },
   subline: (
     <>
       I'm Nam, a Hanoi based Product Designer with over a decade of experience crafting intuitive
       <br /> user experiences and interfaces.
-=======
-  headline: <>Building bridges between design and code</>,
-  featured: {
-    display: true,
-    title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
-      </Row>
-    ),
-    href: "/work/building-once-ui-a-customizable-design-system",
-  },
-  subline: (
-    <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
->>>>>>> upstream/main:src/resources/content.tsx
     </>
   ),
 };
@@ -150,8 +90,22 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
+        company: "Sun* Global",
+        timeframe: "2025 - Present",
+        role: "Lead UI Designer",
+        achievements: [
+          <>
+            Leading UI/UX design initiatives and establishing design standards across multiple projects
+          </>,
+          <>
+            Mentoring and guiding design teams to deliver high-quality user experiences
+          </>,
+        ],
+        images: [],
+      },
+      {
         company: "NashTech Global",
-        timeframe: "2018 - Present",
+        timeframe: "2018 - 2025",
         role: "Principal UI Designer",
         achievements: [
           <>
@@ -212,78 +166,23 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-<<<<<<< HEAD:src/app/resources/content.js
         title: "UI Design",
         description: <>Extensive experience in UI design for web, mobile, and game interfaces with focus on user experience and accessibility.</>,
         images: [],
+        tags: [],
       },
       {
         title: "Design Leadership",
         description: <>Leading design teams and establishing design systems and standards across multiple projects.</>,
         images: [],
+        tags: [],
       },
       {
         title: "Game UI",
         description: <>Expert in creating engaging and intuitive game interfaces with experience at DeNA Co., Ltd.</>,
         images: [],
+        tags: [],
       },
-=======
-        title: "Figma",
-        description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
-        ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },  
->>>>>>> upstream/main:src/resources/content.tsx
     ],
   },
 };
