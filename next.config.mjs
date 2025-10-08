@@ -9,6 +9,11 @@ const isAnalyze = process.env.ANALYZE === 'true';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  images: {
+    unoptimized: true
+  },
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     // Disable webpack cache to prevent large cache files in Cloudflare Pages
